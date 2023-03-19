@@ -1,15 +1,17 @@
+import { Roboto } from "@next/font/google";
+import Layout from "@/Components/Layout/Layout";
 
-import { Inter } from '@next/font/google'
-
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
-    <>
-  <h1>Какой все-таки шрифт мне выбрать?</h1>
-      <p>Я просто хочу понять, какой шрифт нормальный</p>
-
-    </>
-  )
+    <div className={inter.className}>
+      <Layout>
+        <h1>Хуйня</h1>
+      </Layout>
+    </div>
+  );
 }
