@@ -1,0 +1,229 @@
+.home
+  .video
+    width: 100%
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(0,0,0,.3)
+      z-index: -1
+    video
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: -1
+    .container
+      max-width: 1300px
+      margin: 0 auto
+      padding: 30px 20px
+      @media (max-width: 510px)
+        padding: 30px 5px
+      .top
+        height: 400px
+        display: flex
+        justify-content: space-between
+        margin-bottom: 80px
+        @media (max-width: 991px)
+          align-items: center
+          flex-direction: column
+          text-align: center
+          margin-bottom: 114px
+        @media (max-width: 847px)
+          margin-bottom: 165px
+        @media (max-width: 647px)
+          margin-bottom: 216px
+        @media (max-width: 510px)
+          margin-bottom: 121px
+        @media (max-width: 443px)
+          margin-bottom: 157px
+        @media (max-width: 352px)
+          margin-bottom: 174px
+        .left
+          width: 60%
+          height: 350px
+          display: flex
+          flex-direction: column
+          gap: 20px
+          @media (max-width: 991px)
+            width: 100%
+            align-items: center
+          button
+            border: none
+            display: inline-block
+            width: fit-content
+            padding: 10px 25px
+            background: #ffc23c
+            cursor: pointer
+            border-radius: 25px
+            color: var(--main-color)
+            font-size: 14px
+            font-weight: 600
+            box-shadow: 0 4px 0 #e2a826,0 10px 13px rgba(0,0,0,.09)
+            transition: .2s
+            &:hover
+              background: #ffcd63
+              color: #404e62
+            @media (max-width: 991px)
+              display: none
+
+
+          h1
+            color: #ffffff
+            width: 670px
+            font-size: 54px
+            font-weight: 600
+            @media (max-width: 991px)
+              font-size: 42px
+              width: 100%
+            @media (max-width: 510px)
+              font-size: 30px
+          p
+            color: white
+            @media (max-width: 991px)
+              display: none
+
+        .right
+          width: 30%
+          @media (max-width: 991px)
+             width: 80%
+             margin-top: 30px
+          @media (max-width: 600px)
+            width: 100%
+          .form
+            width: 100%
+            height: 100%
+            border-radius: 15px
+            box-shadow: 10px 18px 19px 0 rgba(0,0,0,.322)
+            backdrop-filter: saturate(180%) blur(10px)
+            background: hsla(0,0%,90%,.4)
+            padding: 10px 15px
+            h4
+              font-size: 21px
+              color: white
+              margin-bottom: 8px
+              text-align: center
+            .p1
+              color: rgba(255, 255, 255, 0.82)
+              font-size: 14px
+              text-align: center
+              margin-bottom: 8px
+            .p2
+              color: white
+              font-size: 12px
+              font-weight: 600
+              margin-bottom: 8px
+            form
+              .top
+                height: 40px
+                margin-bottom: 14px
+                @media (max-width: 991px)
+                  display: flex
+                  flex-direction: row
+                input
+                  height: 40px
+                  border: none
+                  border-radius: 5px
+                  width: 48%
+                  padding: 5px 10px
+
+
+              .mid
+                height: 40px
+                margin-bottom: 14px
+                input
+                  height: 100%
+                  width: 100%
+                  border: none
+                  border-radius: 5px
+                  padding: 5px 10px
+              .bot
+                text-align: center
+                margin-bottom: 14px
+                button
+                  border: none
+                  display: inline-block
+                  width: 100%
+                  padding: 10px 25px
+                  background: #ffc23c
+                  cursor: pointer
+                  border-radius: 25px
+                  color: var(--main-color)
+                  font-size: 14px
+                  font-weight: 600
+                  box-shadow: 0 4px 0 #e2a826,0 10px 13px rgba(0,0,0,.09)
+                  transition: .2s
+                  &:hover
+                    background: #ffcd63
+                    color: #404e62
+            .accept
+              display: flex
+              align-items: center
+              .img
+                width: 10px
+                margin-right: 5px
+              p
+                color: white
+                font-size: 12px
+                @media (max-width: 991px)
+                  font-size: 14px
+
+      .bot
+        display: flex
+        justify-content: space-between
+        width: 100%
+        @media (max-width: 991px)
+          flex-direction: column
+          align-items: center
+          gap: 10px
+          margin-top: 30px
+        .box
+          width: 32%
+          height: 165px
+          background: hsla(0, 0%, 90%, 0.4)
+          border-radius: 15px
+          box-shadow: 10px 18px 19px 0 rgba(0, 0, 0, 0.322)
+          backdrop-filter: saturate(180%) blur(10px)
+          display: flex
+          align-items: center
+          padding: 0px 5px
+          justify-content: center
+          @media (max-width: 991px)
+            width: 80%
+            height: 45px
+            justify-content: center
+          @media (max-width: 600px)
+            width: 100%
+          p
+            font-size: 12px
+            font-weight: 500
+            color: white
+            text-align: center
+            @media (max-width: 400px)
+             font-size: 10px
+
+
+
+.about
+  margin-top: 80px
+  .container
+    max-width: 1300px
+    margin: 0 auto
+    h2
+      text-align: center
+      font-size: 42px
+      color: var(--main-color)
+      margin-bottom: 30px
+    p
+      text-indent: 15px
+      color: var(--main-color)
+
+
+
+
+
+

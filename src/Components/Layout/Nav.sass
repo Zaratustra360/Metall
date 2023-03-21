@@ -1,0 +1,86 @@
+.nav
+  position: sticky
+  top: 0
+  z-index: 100
+  padding: 6px 20px
+  background: #f6fbff
+  box-shadow: 0 10px 13px rgba(0,0,0,.03)
+  @media (max-width: 991px)
+    box-shadow: none
+  &.active
+    background: #f6fbff
+
+  .container
+    max-width: 1300px
+    margin: 0 auto
+    display: flex
+    position: relative
+    nav
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      position: relative
+      .nav__template
+        @media (max-width: 991px)
+          position: fixed
+          top: 66px
+          right: -288px
+          background: #f6fbff
+          min-height: calc(100vh - 74px)
+          width: 288px
+          transition: all .2s
+          &.active
+            right: 0px
+        ul
+          display: flex
+          gap: 20px
+          @media (max-width: 991px)
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-top: 30px
+          li
+            .link
+              font-weight: 500
+              color: #35455c
+
+
+    .contacts
+      display: flex
+      align-items: center
+      font-size: 18px
+      font-weight: 600
+      gap: 20px
+      @media (max-width: 991px)
+        position: absolute
+        right: 80px
+      @media (max-width: 450px)
+        font-size: 16px
+        right: 50px
+      .tel
+        color: #35455c
+      .social
+        @media (max-width: 550px)
+          display: none
+
+        .tg
+          margin-left: 10px
+
+    .burger
+      display: none
+      flex-direction: column
+      row-gap: 8px
+      cursor: pointer
+      @media (max-width: 991px)
+        display: flex
+      div
+        width: 40px
+        height: 2px
+        border-radius: 10px
+        background: #35455c
+
+
+
+
