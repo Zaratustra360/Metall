@@ -32,7 +32,7 @@ export default function Nav() {
                 <Link
                   onClick={() => setNavActive(false)}
                   className="link"
-                  href="/"
+                  href="#company"
                 >
                   О компании
                 </Link>
@@ -41,7 +41,7 @@ export default function Nav() {
                 <Link
                   onClick={() => setNavActive(false)}
                   className="link"
-                  href="/"
+                  href="#works"
                 >
                   Наши работы
                 </Link>
@@ -59,7 +59,7 @@ export default function Nav() {
                 <Link
                   onClick={() => setNavActive(false)}
                   className="link"
-                  href="/"
+                  href="#contacts"
                 >
                   Контакты
                 </Link>
@@ -71,8 +71,8 @@ export default function Nav() {
               +7 911 256 18 49
             </a>
             <div className="social">
-              <Link href="/">
-                <Image src={Whatsapp} alt="" height={25} />
+              <Link href="https://wa.me/+79112561849">
+                <Image src={Whatsapp} alt="whatsapp" height={25} />
               </Link>
               <Link href="/">
                 <Image className="tg" src={Telegram} alt="" height={25} />
