@@ -1,16 +1,35 @@
 import { Montserrat } from "@next/font/google";
 import Layout from "@/Components/Layout/Layout";
+import Carousel from "@/Components/UI/Carousel/Carousel";
+
 import Button from "@/Components/UI/Button/Button";
 import Checkbox from "@/../public/img/checkbox.svg";
+import Muscles from "@/../public/img/muscles.svg";
+import Contract from "@/../public/img/contract.svg";
+import Broom from "@/../public/img/broom.svg";
+import Canopy1 from "@/../public/img/canopy1.jpeg";
+import Canopy2 from "@/../public/img/canopy2.jpeg";
+import Canopy3 from "@/../public/img/canopy3.jpeg";
+import Canopy4 from "@/../public/img/canopy4.jpeg";
+import Canopy5 from "@/../public/img/canopy5.jpeg";
+import Canopy6 from "@/../public/img/canopy6.jpeg";
+import Canopy7 from "@/../public/img/canopy7.jpeg";
+import Canopy8 from "@/../public/img/canopy8.jpeg";
+import Canopy9 from "@/../public/img/canopy9.jpeg";
+import Canopy10 from "@/../public/img/canopy10.jpeg";
+import Canopy11 from "@/../public/img/canopy11.jpeg";
+import Canopy12 from "@/../public/img/canopy12.jpeg";
 import Image from "next/image";
-const inter = Montserrat({
+import { Head } from "next/document";
+
+const montserrat = Montserrat({
   weight: ["400", "500", "700", "900"],
   subsets: ["latin"],
 });
 
 export default function Home() {
   return (
-    <div className={inter.className}>
+    <div className={montserrat.className}>
       <Layout>
         <main className="home">
           <div className="video">
@@ -66,6 +85,14 @@ export default function Home() {
               </div>
               <div className="bot">
                 <div className="box">
+                  <div className="flag">
+                    <Image
+                      className="icon"
+                      src={Muscles}
+                      alt="image"
+                      draggable={false}
+                    />
+                  </div>
                   <p>
                     Выдерживают нагрузку в соответствии с "СП 20.13330.2016.
                     Свод правил. Нагрузки и воздействия" и "СП 131.13330.2020.
@@ -73,6 +100,14 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="box">
+                  <div className="flag">
+                    <Image
+                      className="icon"
+                      src={Contract}
+                      alt="image"
+                      draggable={false}
+                    />
+                  </div>
                   <p>
                     Официальный договор <br />
                     Гарантия 12 месяцев <br /> Оплата наличными / картой / на
@@ -80,6 +115,14 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="box">
+                  <div className="flag">
+                    <Image
+                      className="icon"
+                      src={Broom}
+                      alt="image"
+                      draggable={false}
+                    />
+                  </div>
                   <p>
                     Финальная уборка после работы — оставим после себя чистоту
                   </p>
@@ -104,6 +147,154 @@ export default function Home() {
               </p>
             </div>
           </section>
+          <div className="catalog">
+            <div className="container">
+              <h2>Производим навесы для частных лиц и компаний</h2>
+              <div className="box">
+                <div className="instance">
+                  <h3>Арочные навеcы</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy1}
+                    alt={"image"}
+                  />
+                  <p>от 4500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Двускатные навесы</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy2}
+                    alt={"image"}
+                  />
+                  <p>от 4500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Двухуровневые навесы</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy3}
+                    alt={"image"}
+                  />
+                  <p>от 4500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Навесы для авто</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy4}
+                    alt={"image"}
+                  />
+                  <p>от 3300 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Навесы для бассейнов</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy5}
+                    alt={"image"}
+                  />
+                  <p>от 3300 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Навесы для беседок</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy6}
+                    alt={"image"}
+                  />
+                  <p>от 3500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Навесы для зоны отдыха</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy7}
+                    alt={"image"}
+                  />
+                  <p>от 3500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Навесы для летней кухни</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy8}
+                    alt={"image"}
+                  />
+                  <p>от 3500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Навесы для печей-барбекю</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy9}
+                    alt={"image"}
+                  />
+                  <p>от 3500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Козырьки из поликарбоната</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy10}
+                    alt={"image"}
+                  />
+                  <p>от 3500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Навесы для террас</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy11}
+                    alt={"image"}
+                  />
+                  <p>от 3500 руб. за м2</p>
+                </div>
+
+                <div className="instance">
+                  <h3>Каркасы</h3>
+                  <Image
+                    draggable={false}
+                    className="img"
+                    src={Canopy12}
+                    alt={"image"}
+                  />
+                  <p>от 3500 руб. за м2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="case">
+            <div className="container">
+              <h2>С 2020 года мы изготовили и установили более 200 навесов</h2>
+              <p>Вот некоторые из наших работ:</p>
+              <div className="portfolio">
+                <Carousel />
+                <h2>Размер:</h2>
+              </div>
+            </div>
+          </div>
         </main>
       </Layout>
     </div>
