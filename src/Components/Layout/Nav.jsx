@@ -67,11 +67,11 @@ export default function Nav() {
             </ul>
           </div>
           <div className="contacts">
-            <a href="tel:+79112561849" className="tel">
-              +7 911 256 18 49
+            <a href="tel:+79992385506" className="tel">
+              +7 999 238 55 06
             </a>
             <div className="social">
-              <Link href="https://wa.me/+79112561849">
+              <Link href="https://wa.me/+79992385506">
                 <Image src={Whatsapp} alt="whatsapp" height={25} />
               </Link>
               <Link href="/">

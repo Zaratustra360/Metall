@@ -483,12 +483,12 @@ export default function Home() {
                 <div className="right">
                   <h5>Телефон:</h5>
                   <div className="tel__block">
-                    <a href="tel:+79112561849" className="tel__number">
-                      +7 911 256 18 49
+                    <a href="tel:+79992385506" className="tel__number">
+                      +7 999 238 55 06
                     </a>
                     <Link
                       className="wa__outer"
-                      href="https://wa.me/+79112561849"
+                      href="https://wa.me/+79992385506"
                     >
                       <Image
                         src={Whatsapp}
