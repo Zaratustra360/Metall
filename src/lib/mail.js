@@ -1,5 +1,5 @@
 import mailer from "nodemailer";
-
+let a = 10;
 const smtpTransport = mailer.createTransport(
   {
     host: "smtp.yandex.ru",
