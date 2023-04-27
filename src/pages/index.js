@@ -58,7 +58,7 @@ export default function Home() {
 
   async function sendForm() {
     try {
-      await axios.post("http://localhost:3000/api/send-request", {
+      await axios.post("https://metall-krovlya-spb.ru/api/send-request", {
         name,
         tel,
         height,
